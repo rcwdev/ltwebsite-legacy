@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lt. Wilson</title>
+        <link rel="icon" href="src/img/lt.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="src/css/main.css">
+        <link rel="stylesheet" href="src/css/tingle.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <!-- Twitter Meta Card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@ltwilsonyt">
+        <meta name="twitter:title" content="Lt. Wilson">
+        <meta name="twitter:image" content="https://ltwilson.gq/src/img/lt.png">
+        <meta name="twitter:description" content="Lt. Wilson is a mediocre content creator, video editor, and occasionally developer.">
+    </head>
+    <body onresize="widthResize()">
+        <nav class="topbar">
+            <div class="branding">
+                <img src="src/img/lt.png">
+                <p>Lt. Wilson</p>
+            </div>
+            <div class="links">
+                <a id="twitter" href="https://twitter.com/ltwilsonyt"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+                <a id="instagram" href="https://instagram.com/ltwilsonyt"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+                <a id="youtube" href="https://youtube.com/ltwilson"><i class="fab fa-youtube"></i>&nbsp;YouTube</a>
+                <a id="twitch" href="https://twitch.tv/ltwilsonyt"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
+            </div>
+        </nav>
+        <div class="content-index">
+            <div id="particles-js"></div>
+            <div class="box">
+                <img src="src/img/lt.png">
+                <h1 id="splash-title">Lt. Wilson</h1>
+                <p id="splash-text">Home of quality content.</p>
+            </div>
+            <p id="notice" class="notice flash">Important update about <a onclick="openModal()">Watch Mode</a>.</p>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <a id="watch" href="watch/"><i class="fas fa-satellite-dish"></i>&nbsp;Watch Mode</a>
+                <a id="specs" href="specs/"><i class="fas fa-desktop"></i>&nbsp;Specifications</a>
+                <a id="stuff" href="stuff/"><i class="fas fa-keyboard"></i>&nbsp;Peripherals</a>
+            </div>
+            <div class="links">
+                <a href="https://status.rcwdev.gq">Status</a>
+                <a href="privacy/">Privacy Policy</a>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="src/js/tingle.js"></script>
+        <script src="src/js/particles.js"></script>
+        <script src="src/js/index.js"></script>
+    </body>
+</html>

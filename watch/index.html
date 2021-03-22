@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watch Mode | Lt. Wilson</title>
+        <link rel="icon" href="../src/img/lt.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Stylesheets and Assets -->
+        <link rel="stylesheet" href="../src/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <!-- Twitter Meta Card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@ltwilsonyt">
+        <meta name="twitter:title" content="Watch Lt. Wilson">
+        <meta name="twitter:image" content="https://ltwilson.gq/src/img/lt.png">
+        <meta name="twitter:description" content="Watch Lt. Wilson LIVE with custom features, only available on Watch Mode.">
+    </head>
+    <body onresize="widthResize()">
+        <nav class="topbar">
+            <div class="links noselect">
+                <a id="wm-home-button" href="../"><i class="fas fa-arrow-left"></i>&nbsp;Exit Watch Mode</a>
+            </div>
+            <div class="links noselect">
+                <a id="wm-privacy-button" href="../privacy/"><i class="fas fa-user-secret"></i></a>
+                <a id="wm-donate-button" href="https://streamelements.com/ltwilsonyt/tip" target="_blank"><i class="fas fa-donate"></i></a>
+                <a id="wm-chat-control" onclick="chatButtonClick()"><i id="wm-chat-control-icon" class="fas fa-comment-alt"></i></a>
+            </div>
+        </nav>
+        <div class="content-wm" id="content-wm">
+            <div class="twitch" id="twitch"></div>
+            <div class="chat" id="chat"></div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+        <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+        <script src="../src/js/watch.js" language="javascript" type="text/javascript"></script>
+    </body>
+</html>

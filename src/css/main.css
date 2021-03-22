@@ -1,0 +1,353 @@
+:root {
+    --wm-primary-color: #000cb1;
+    --wm-primary-hover: #000ecf;
+    --wm-secondary-color: #ff00ff;
+    --wm-secondary-hover: #ff2eff;
+    --wm-text-light: #ffffff;
+    --wm-text-dark: #000000;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background: var(--wm-primary-color) url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow: hidden;   
+}
+
+/* Topbar CSS */
+
+.topbar {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    background: var(--wm-primary-color);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.8);
+    z-index: 3;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.branding img {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 35px;
+}
+
+.branding a {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wm-text-light);
+    text-decoration: none;
+    transition: background 0.5s, color 0.5s;
+}
+
+.branding a:hover {
+    background: white;
+    color: black;
+}
+
+.links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    display: flex;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+    color: var(--wm-text-light);
+    min-width: 25px;
+}
+
+.links a:hover {
+    background: white;
+    color: var(--wm-text-dark);
+}
+
+/* Footer CSS */
+
+.footer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: var(--wm-primary-color);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px -4px 8px rgba(0,0,0,0.8);
+    z-index: 3;
+}
+
+/* Index CSS - for the main page */
+
+.content-index {
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    text-align: center;
+    background :transparent;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url(../img/scanlines.png);
+    border: solid 2px white;
+    box-shadow: 0px 0px 8px white;
+    z-index: 2;
+}
+
+.box img {
+    height: 150px;
+    filter: drop-shadow(0px 0px 8px white)
+}
+
+.box i {
+    font-size: 100px;
+    filter: drop-shadow(0px 0px 8px white);
+    margin-bottom: 10px;
+}
+
+.box h1 {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 0px 0px 8px white;
+}
+
+.box p {
+    margin: 0;
+    text-shadow: 0px 0px 8px white;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Watch Mode CSS - for the watch mode page */
+
+.content-wm {
+    display: flex;
+    height: calc(100% - 45px);
+}
+
+#wm-music-title {
+    font-size: 18px;
+}
+
+#wm-music-artist {
+    font-size: 10px;
+}
+
+.twitch {
+    height: 100%;
+    width: 100%;
+    display: block;
+    justify-content: top;
+    align-items: left;
+}
+
+.chat iframe {
+    height: 100%;
+    width: 20%;
+    min-width: 350px;
+    box-shadow: 0px 0px 4px black;
+}
+
+.chat .inline-bottom {
+    position: absolute;
+    padding-left: 10px;
+    bottom: 17px;
+}
+
+/* Links CSS - for links page */
+
+.content-links {
+    display: flex;
+    height: calc(100% - 45px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lp-link {
+    background: var(--wm-primary-color);
+    width: 90%;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s, border 0.5s, box-shadow 0.5s;
+    animation: fadeIn 0.5s forwards;
+}
+
+.lp-link:hover {
+    box-shadow: 0px 0px 8px var(--wm-primary-color);
+    background: white;
+    color: black;
+}
+
+.lp-link .info {
+    border: 0;
+    display: inline;
+}
+
+.lp-link i {
+    font-size: 35px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.lp-link h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.lp-link p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Privacy CSS - for the privacy page */
+
+.content-privacy {
+    height: calc(100% - 45px);
+    background: url(../img/scanlines.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+/* API CSS - for API pages */
+
+.content-api {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-api img {
+    height: 75px;
+}
+
+/* CSS Selectors - for special uses */
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+.notice {
+    padding: 10px;
+    background: url('../img/scanlines.png'), rgba(255,0,0.5);
+    border-radius: 5px;
+    border: solid 2px red;
+    box-shadow: 0px 0px 8px red;
+    text-shadow: 0px 0px 8px white;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    z-index: 10;
+}
+
+.notice a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.flash {
+    animation: flash 1s alternate ease-in-out infinite;
+}
+
+@keyframes flash {
+    from {}
+    to {border-color: white; box-shadow: 0px 0px 8px white}
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+}
