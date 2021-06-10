@@ -13,10 +13,17 @@
                 color: white;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             }
+
+            #updated {
+                position: absolute;
+                width: 100%;
+                bottom: 10px;
+            }
         </style>
     </head>
     <body>
         <h1 id="content">Getting The Latest...</h1>
+        <p id="updated">Created by Lt. Wilson</p>
         <noscript>Can't get the latest without JavaScript on.</noscript>
         <script>
             fetch('https://ltwilson.live/dynamic/latest-data.json')
@@ -24,7 +31,9 @@
             .then (body => {
                 let title = body.title;
                 let text = body.content;
+                let updated = body.updated
                 document.getElementById('content').innerText = text;
+                document.getElementById('updated').innerText = 'Created by Lt. Wilson - ' + updated;
                 document.title = title;
             })
         </script>
