@@ -18,6 +18,7 @@ function widthResize() {
         document.getElementById("twitch").innerHTML = `<i class="fab fa-twitch"></i>`;
         document.getElementById("specs").innerHTML = `<i class="fas fa-desktop"></i>`;
         document.getElementById("stuff").innerHTML = `<i class="fas fa-keyboard"></i>`;
+        document.getElementById("cmds").innerHTML = `<i class="fas fa-robot"></i>`;
     } else if (width > 700) {
         if (document.getElementById("watch") !== null) {
             document.getElementById("watch").innerHTML = `<i class="fas fa-satellite-dish"></i>&nbsp;Watch Mode`;
@@ -28,6 +29,7 @@ function widthResize() {
         document.getElementById("twitch").innerHTML = `<i class="fab fa-twitch"></i>&nbsp;Twitch`;
         document.getElementById("specs").innerHTML = `<i class="fas fa-desktop"></i>&nbsp;Specifications`;
         document.getElementById("stuff").innerHTML = `<i class="fas fa-keyboard"></i>&nbsp;Peripherals`;
+        document.getElementById("cmds").innerHTML = `<i class="fas fa-robot"></i>&nbsp;Commands`;
     };
 };
 
