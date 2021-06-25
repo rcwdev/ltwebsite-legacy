@@ -96,6 +96,10 @@ function attachTooltips() {
     tippy('#wm-menu-button', {
         content: 'Toggle WM Menu'
     });
+
+    tippy('#wm-cmds-button', {
+        content: 'Bot Commands'
+    });
 };
 
 attachTooltips();
